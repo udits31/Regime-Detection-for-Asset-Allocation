@@ -1,0 +1,87 @@
+# ============================================================
+# requirements.txt — DeepRegime v2.0
+# FIXED: removed "pip install -r requirements.txt" parse error
+# All pinned to minimum compatible versions
+# ============================================================
+
+# ── Core ─────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# ── Data Sources ─────────────────────────────────────────────
+yfinance>=0.2.28
+alpha-vantage>=2.3.1
+requests>=2.31.0
+websockets>=11.0
+
+# ── ML / HMM ─────────────────────────────────────────────────
+scikit-learn>=1.3.0
+hmmlearn>=0.3.0
+
+# ── Deep Learning (TensorFlow) ───────────────────────────────
+tensorflow>=2.13.0
+keras>=2.13.0
+
+# ── Technical Analysis ───────────────────────────────────────
+ta>=0.10.2
+# Note: ta-lib requires system-level C library installation:
+#   Ubuntu: apt-get install libta-lib-dev
+#   macOS:  brew install ta-lib
+# Then: pip install TA-Lib>=0.4.28
+
+# ── Portfolio Optimization ───────────────────────────────────
+PyPortfolioOpt>=1.5.5
+cvxpy>=1.3.2
+empyrical>=0.5.5
+
+# ── Backend ──────────────────────────────────────────────────
+fastapi>=0.103.0
+uvicorn[standard]>=0.23.0
+pydantic>=2.3.0
+pydantic-settings>=2.0.0
+python-multipart>=0.0.6
+httpx>=0.25.0
+slowapi>=0.1.8
+
+# ── Database ─────────────────────────────────────────────────
+sqlalchemy>=2.0.0
+alembic>=1.12.0
+aiosqlite>=0.19.0
+asyncpg>=0.28.0
+
+# ── Caching ──────────────────────────────────────────────────
+redis>=5.0.0
+aiohttp>=3.8.5
+
+# ── Security ─────────────────────────────────────────────────
+argon2-cffi>=21.3.0
+
+# ── NLP / Sentiment ──────────────────────────────────────────
+transformers>=4.33.0
+torch>=2.0.0
+vaderSentiment>=3.3.2
+
+# ── Explainability ───────────────────────────────────────────
+shap>=0.43.0
+
+# ── Dashboard ────────────────────────────────────────────────
+streamlit>=1.27.0
+plotly>=5.17.0
+
+# ── Visualization ────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+mplfinance>=0.12.10b0
+
+# ── Utils ────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+loguru>=0.7.0
+joblib>=1.3.0
+tqdm>=4.66.0
+pyyaml>=6.0.1
+
+# ── Testing ──────────────────────────────────────────────────
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0

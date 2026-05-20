@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual env
+venv/
+.venv/
+env/
+
+# Environment
+.env
+*.env.local
+
+# Models (large binary files)
+models/saved/*.pkl
+models/saved/*.keras
+models/saved/*.h5
+models/checkpoints/
+
+# Database
+database/*.db
+database/*.sqlite3
+
+# Logs
+logs/*.log
+logs/*.txt
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Data cache
+data/cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker/postgres_data/
+
+# Streamlit
+.streamlit/secrets.toml
