@@ -1,0 +1,30 @@
+[
+  {
+    "model_name": "GaussianHMM",
+    "version": "v2.0",
+    "registered": "2026-09-05T07:12:43.255505+00:00",
+    "train_start": "2017-01-16",
+    "train_end": "2024-01-01",
+    "n_features": 20,
+    "n_states": 7,
+    "metrics": {
+      "log_lik": -1492.8278578070658,
+      "n_states": 7
+    },
+    "notes": "Auto-selected n_states via BIC sweep"
+  },
+  {
+    "model_name": "GaussianHMM",
+    "version": "v2.0",
+    "registered": "2026-09-07T12:36:40.812404+00:00",
+    "train_start": "2017-01-16",
+    "train_end": "2024-01-01",
+    "n_features": 20,
+    "n_states": 7,
+    "metrics": {
+      "log_lik": -1492.8278578511095,
+      "n_states": 7
+    },
+    "notes": "Auto-selected n_states via BIC sweep"
+  }
+]
