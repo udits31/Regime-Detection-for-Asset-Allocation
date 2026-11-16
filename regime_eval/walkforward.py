@@ -53,9 +53,12 @@ def generate_signals(panel: pd.DataFrame, model: str = "hmm", fit_block: Callabl
     first, last = oos_pos[0], oos_pos[-1]
     max_k = max(m["n_states_grid"])
 
+    if fit_block is None and model == "hsmm":
+        from regime_eval import hsmm as hsmm_mod
+        fit_block = hsmm_mod.fit_block
     if fit_block is None:
         if model != "hmm":
-            raise ValueError("Pass fit_block for models other than the plain HMM")
+            raise ValueError(f"Unknown model {model!r}")
 
         def fit_block(X_window):
             fitted, scores = hmm_mod.select_and_fit(X_window, m["n_states_grid"], m["seeds"], m["validation_fraction"])

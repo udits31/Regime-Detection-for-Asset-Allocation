@@ -119,3 +119,24 @@ def test_walk_forward_signals_are_causal(panel):
 
     leak = first_leak(signals, horizon, cuts)
     assert leak is None, f"look-ahead detected at cut {leak[0]}, first differing date {leak[1]}"
+
+
+@needs_panel
+@pytest.mark.slow
+def test_semi_markov_walk_forward_signals_are_causal(panel):
+    """Same property for the semi-Markov pipeline, over the first two blocks (fits are slower)."""
+    from regime_eval.walkforward import generate_signals
+
+    w = load_settings()["windows"]
+    first = int(np.searchsorted(panel.index, pd.Timestamp(w["oos_start"])))
+    step = w["refit_every_days"]
+    cuts = [first + step, first + step + 1, first + step + 27]     # day before the refit, refit day, mid-block
+    horizon = panel.iloc[: first + step + 37]
+    cols = ["equity_target", "n_states", "p_state_0", "p_state_1", "p_state_2", "p_state_3"]
+
+    def signals(p):
+        s = generate_signals(p, model="hsmm")
+        return s[cols] if len(s) else pd.DataFrame(columns=cols)
+
+    leak = first_leak(signals, horizon, cuts)
+    assert leak is None, f"look-ahead detected at cut {leak[0]}, first differing date {leak[1]}"
