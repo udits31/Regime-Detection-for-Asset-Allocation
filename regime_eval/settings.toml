@@ -1,0 +1,107 @@
+# Frozen settings for the out-of-sample evaluation.
+# Confirmed by the project owner on 2026-11-16, before any out-of-sample
+# result was computed. Do not edit. Any run with different values must be
+# recorded in results/config_log.csv as a separate configuration.
+
+[data]
+start = "2009-01-02"
+end = "2026-10-30"
+source_prices = "Yahoo Finance, adjusted close"
+source_cash = "FRED IRSTCI01INM156N (OECD call money/interbank rate under 24 hours, India, monthly)"
+cash_note = "Proxy for the 91-day Treasury bill yield"
+cash_rule = "previous month's value, applied daily"
+trading_days_per_year = 252
+vix_ffill_max_days = 5
+
+[data.tickers]
+equity = "NIFTYBEES.NS"
+gold = "GOLDBEES.NS"
+index = "^NSEI"        # used only for the 2010 data correction
+vix = "^INDIAVIX"      # feature only
+
+[corrections]
+# NIFTYBEES.NS: bad prices that reverse; ETF return replaced by index return.
+replace_equity_return_with_index = ["2010-02-05", "2010-02-08", "2010-10-06", "2010-10-07"]
+# Both ETFs: Yahoo closes on the two ex-split days are one split ratio too low.
+split_ex_date = "2019-12-19"
+split_dates = ["2019-12-19", "2019-12-20"]
+split_ratio_equity = 10.0
+split_ratio_gold = 100.0
+split_source = "NSE Clearing Limited circular NCL/CMPT/42889 (Circular Ref. No. 368/2019), 2019-12-12"
+
+[windows]
+first_usable_date = "2010-01-19"
+train_start = "2010-01-19"
+train_end = "2014-12-31"
+oos_start = "2015-01-01"
+oos_end = "2026-10-30"
+refit_every_days = 63
+refit_window = "expanding"
+
+[features]
+names = ["log_return", "realised_vol_21", "log_vix", "drawdown_252"]
+realised_vol_window = 21
+drawdown_window = 252
+covariance = "diag"
+
+[model]
+n_states_grid = [2, 3, 4]
+n_states_selection = "log-likelihood on the last 20% of each training window, separately per model"
+validation_fraction = 0.20
+state_order = "ascending volatility within each training window"
+n_random_starts = 5
+seeds = [0, 1, 2, 3, 4]
+restart_selection = "best training log-likelihood"
+
+[hsmm]
+duration_distribution = "shifted negative binomial, per state"
+max_duration_days = 252
+log_cap_hits = true
+
+[allocation]
+description = "Equity and cash timing rule with a constant gold holding"
+equity_weight_calmest = 0.80
+equity_weight_most_volatile = 0.20
+equity_weight_rule = "filtered-probability-weighted average of per-state weights, evenly spaced between the two ends"
+gold_weight = 0.20
+cash_weight = "remainder"
+
+[trading]
+signal = "close of day t"
+execution = "close of day t+1"
+rebalance_band = 0.05
+cost_bps_per_unit_turnover = 10
+cost_bps_sensitivity = 25
+
+[benchmarks.buy_and_hold]
+equity = 1.0
+
+[benchmarks.static_mix]
+equity = 0.50
+gold = 0.20
+cash = 0.30
+rebalance = "monthly"
+
+[benchmarks.moving_average]
+window = 200
+equity_above = 0.80
+equity_below = 0.20
+gold = 0.20
+
+[benchmarks.vol_target]
+target_annual_vol = 0.0767
+realised_vol_window = 21
+equity_min = 0.20
+equity_max = 0.80
+gold = 0.20
+target_source = "half the median 21-day realised volatility of NIFTYBEES.NS, 2010-01-19 to 2014-12-31"
+
+[benchmarks.plain_hmm]
+note = "Same strategy with the plain HMM in place of the semi-Markov model"
+
+[bootstrap]
+method = "stationary block bootstrap, paired"
+mean_block_days = 21
+n_resamples = 10000
+seed = 0
+statistic = "Sharpe ratio difference against each benchmark"
