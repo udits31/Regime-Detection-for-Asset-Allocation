@@ -38,3 +38,7 @@ htmlcov/
 .idea/
 .DS_Store
 Thumbs.db
+# Market data is not redistributed. The download script and the file
+# fingerprints in data/processed/panel_meta.json are committed instead.
+data/raw/
+data/processed/panel.csv

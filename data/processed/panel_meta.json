@@ -1,0 +1,40 @@
+{
+  "rows": 4393,
+  "first_date": "2009-01-02",
+  "last_date": "2026-10-30",
+  "vix_days_carried_forward": 21,
+  "equity_returns_replaced_with_index": {
+    "2010-02-05": [
+      0.10772356005841455,
+      -0.026148821603992345
+    ],
+    "2010-02-08": [
+      -0.11550455355862954,
+      0.008847869806840825
+    ],
+    "2010-10-06": [
+      -0.1545893512078217,
+      0.006614336932028841
+    ],
+    "2010-10-07": [
+      0.17371426536923362,
+      -0.01069278641815019
+    ]
+  },
+  "split_closes_rescaled": [
+    "2019-12-19",
+    "2019-12-20"
+  ],
+  "split_checks_after_correction": {
+    "equity_vs_index_gt_5pts": 0,
+    "gold_move_gt_15pct": 0
+  },
+  "raw_sha256": {
+    "cash_rate.csv": "50da5f83ab7bb35a9d6286358b714e595b78aa3a741941ec08ef4f045c7b1225",
+    "equity.csv": "541369f641152788cdaa23eb7bd255af57dc6f40460669aa922065b5cff83038",
+    "gold.csv": "0f371dbc682125fe1cd836d4c87073a171c36ef83fdafedf9773218705acaac9",
+    "index.csv": "f0294892c04bada2798a564a62b13a7932d89f3546e26c208a87289e3d2fdf60",
+    "vix.csv": "f93a48f28100bdb6a1b2605b6d928eb79ac57c0327b2bad623782e9c0e9d554b"
+  },
+  "panel_sha256": "6ea1c41254027f2313f3d3be651e586856fd442e141a5f4fd7a0414ee9d19de4"
+}
