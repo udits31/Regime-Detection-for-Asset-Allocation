@@ -42,3 +42,5 @@ Thumbs.db
 # fingerprints in data/processed/panel_meta.json are committed instead.
 data/raw/
 data/processed/panel.csv
+# Daily strategy returns include the ETF's own daily returns.
+results/real/oos_daily_returns_*.csv

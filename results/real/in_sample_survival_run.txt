@@ -1,0 +1,9 @@
+# IN-SAMPLE, DESCRIPTIVE. Data: NIFTYBEES.NS features, 2010-01-19 to 2026-10-30 (real data; includes the out-of-sample evaluation window). Both models fitted once on the full sample with 3 states; regime lengths from the most likely path. Not a trading result.
+      model                        state  episodes  censored  days_in_state  km_median_days  longest_days  model_implied_median_days
+  plain HMM       State 1 of 3 (calmest)        19         0           1193            34.0           250                       42.0
+  plain HMM                 State 2 of 3        44         2           2100            34.0           171                       31.0
+  plain HMM State 3 of 3 (most volatile)        24         0            847            28.0           174                       23.0
+semi-Markov       State 1 of 3 (calmest)        19         0           1193            34.0           252                       43.0
+semi-Markov                 State 2 of 3        44         1           2022            31.0           171                       36.0
+semi-Markov State 3 of 3 (most volatile)        25         1            925            29.0           174                       27.0
+{'n_states': 3, 'heldout_scores': {2: -3503.7525177713887, 3: -3068.5493914933377, 4: -3111.1588883260756}, 'agreement': 0.9802, 'semi_cap_hit_share_max': 0.0401, 'semi_tail_beyond_cap_max': 0.0197, 'loglik_plain': -15391.1047, 'loglik_semi': -15387.9729}

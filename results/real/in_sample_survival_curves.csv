@@ -1,0 +1,147 @@
+# IN-SAMPLE, DESCRIPTIVE. Data: NIFTYBEES.NS features, 2010-01-19 to 2026-10-30 (real data; includes the out-of-sample evaluation window). Both models fitted once on the full sample with 3 states; regime lengths from the most likely path. Not a trading result.
+model,state,days,at_risk,ended,survival,model_implied_survival
+plain HMM,State 1 of 3 (calmest),7,19,1,0.9474,0.8896
+plain HMM,State 1 of 3 (calmest),10,18,2,0.8421,0.8461
+plain HMM,State 1 of 3 (calmest),18,16,2,0.7368,0.7403
+plain HMM,State 1 of 3 (calmest),20,14,1,0.6842,0.7159
+plain HMM,State 1 of 3 (calmest),21,13,1,0.6316,0.7041
+plain HMM,State 1 of 3 (calmest),24,12,1,0.5789,0.6697
+plain HMM,State 1 of 3 (calmest),30,11,1,0.5263,0.6058
+plain HMM,State 1 of 3 (calmest),34,10,1,0.4737,0.5666
+plain HMM,State 1 of 3 (calmest),44,9,1,0.4211,0.4794
+plain HMM,State 1 of 3 (calmest),49,8,1,0.3684,0.4410
+plain HMM,State 1 of 3 (calmest),51,7,1,0.3158,0.4265
+plain HMM,State 1 of 3 (calmest),64,6,1,0.2632,0.3433
+plain HMM,State 1 of 3 (calmest),79,5,1,0.2105,0.2672
+plain HMM,State 1 of 3 (calmest),104,4,1,0.1579,0.1759
+plain HMM,State 1 of 3 (calmest),170,3,1,0.1053,0.0584
+plain HMM,State 1 of 3 (calmest),190,2,1,0.0526,0.0418
+plain HMM,State 1 of 3 (calmest),250,1,1,0.0000,0.0153
+plain HMM,State 2 of 3,7,43,2,0.9535,0.8544
+plain HMM,State 2 of 3,9,41,1,0.9302,0.8168
+plain HMM,State 2 of 3,10,40,1,0.9070,0.7987
+plain HMM,State 2 of 3,16,39,3,0.8372,0.6979
+plain HMM,State 2 of 3,21,36,2,0.7907,0.6237
+plain HMM,State 2 of 3,22,34,3,0.7209,0.6098
+plain HMM,State 2 of 3,23,31,2,0.6744,0.5963
+plain HMM,State 2 of 3,24,29,1,0.6512,0.5830
+plain HMM,State 2 of 3,25,28,1,0.6279,0.5701
+plain HMM,State 2 of 3,26,27,1,0.6047,0.5574
+plain HMM,State 2 of 3,28,26,2,0.5581,0.5329
+plain HMM,State 2 of 3,31,24,1,0.5349,0.4981
+plain HMM,State 2 of 3,32,23,1,0.5116,0.4871
+plain HMM,State 2 of 3,34,22,1,0.4884,0.4656
+plain HMM,State 2 of 3,37,21,1,0.4651,0.4353
+plain HMM,State 2 of 3,38,20,1,0.4419,0.4256
+plain HMM,State 2 of 3,41,19,1,0.4186,0.3978
+plain HMM,State 2 of 3,42,17,1,0.3940,0.3890
+plain HMM,State 2 of 3,50,16,1,0.3694,0.3250
+plain HMM,State 2 of 3,60,15,1,0.3447,0.2595
+plain HMM,State 2 of 3,67,14,1,0.3201,0.2217
+plain HMM,State 2 of 3,68,13,1,0.2955,0.2168
+plain HMM,State 2 of 3,72,12,1,0.2709,0.1982
+plain HMM,State 2 of 3,81,11,1,0.2462,0.1619
+plain HMM,State 2 of 3,82,10,1,0.2216,0.1583
+plain HMM,State 2 of 3,83,9,1,0.1970,0.1548
+plain HMM,State 2 of 3,84,8,1,0.1724,0.1513
+plain HMM,State 2 of 3,87,7,1,0.1477,0.1414
+plain HMM,State 2 of 3,88,6,1,0.1231,0.1383
+plain HMM,State 2 of 3,96,5,1,0.0985,0.1155
+plain HMM,State 2 of 3,101,4,1,0.0739,0.1033
+plain HMM,State 2 of 3,119,3,1,0.0492,0.0689
+plain HMM,State 2 of 3,127,2,1,0.0246,0.0576
+plain HMM,State 2 of 3,171,1,1,0.0000,0.0214
+plain HMM,State 3 of 3 (most volatile),3,24,1,0.9583,0.9112
+plain HMM,State 3 of 3 (most volatile),5,23,2,0.8750,0.8564
+plain HMM,State 3 of 3 (most volatile),7,21,1,0.8333,0.8049
+plain HMM,State 3 of 3 (most volatile),13,20,2,0.7500,0.6682
+plain HMM,State 3 of 3 (most volatile),18,18,1,0.7083,0.5723
+plain HMM,State 3 of 3 (most volatile),19,17,1,0.6667,0.5548
+plain HMM,State 3 of 3 (most volatile),21,16,1,0.6250,0.5214
+plain HMM,State 3 of 3 (most volatile),22,15,1,0.5833,0.5055
+plain HMM,State 3 of 3 (most volatile),24,14,1,0.5417,0.4751
+plain HMM,State 3 of 3 (most volatile),26,13,1,0.5000,0.4465
+plain HMM,State 3 of 3 (most volatile),28,12,2,0.4167,0.4197
+plain HMM,State 3 of 3 (most volatile),29,10,1,0.3750,0.4069
+plain HMM,State 3 of 3 (most volatile),34,9,1,0.3333,0.3484
+plain HMM,State 3 of 3 (most volatile),41,8,1,0.2917,0.2804
+plain HMM,State 3 of 3 (most volatile),42,7,1,0.2500,0.2719
+plain HMM,State 3 of 3 (most volatile),43,6,1,0.2083,0.2636
+plain HMM,State 3 of 3 (most volatile),44,5,1,0.1667,0.2555
+plain HMM,State 3 of 3 (most volatile),46,4,1,0.1250,0.2402
+plain HMM,State 3 of 3 (most volatile),54,3,1,0.0833,0.1874
+plain HMM,State 3 of 3 (most volatile),108,2,1,0.0417,0.0351
+plain HMM,State 3 of 3 (most volatile),174,1,1,0.0000,0.0045
+semi-Markov,State 1 of 3 (calmest),7,19,1,0.9474,0.8843
+semi-Markov,State 1 of 3 (calmest),9,18,1,0.8947,0.8552
+semi-Markov,State 1 of 3 (calmest),10,17,1,0.8421,0.8411
+semi-Markov,State 1 of 3 (calmest),18,16,2,0.7368,0.7377
+semi-Markov,State 1 of 3 (calmest),20,14,1,0.6842,0.7142
+semi-Markov,State 1 of 3 (calmest),21,13,1,0.6316,0.7028
+semi-Markov,State 1 of 3 (calmest),24,12,1,0.5789,0.6696
+semi-Markov,State 1 of 3 (calmest),30,11,1,0.5263,0.6082
+semi-Markov,State 1 of 3 (calmest),34,10,1,0.4737,0.5706
+semi-Markov,State 1 of 3 (calmest),44,9,1,0.4211,0.4869
+semi-Markov,State 1 of 3 (calmest),49,8,1,0.3684,0.4499
+semi-Markov,State 1 of 3 (calmest),51,7,1,0.3158,0.4360
+semi-Markov,State 1 of 3 (calmest),64,6,1,0.2632,0.3554
+semi-Markov,State 1 of 3 (calmest),79,5,1,0.2105,0.2811
+semi-Markov,State 1 of 3 (calmest),103,4,1,0.1579,0.1934
+semi-Markov,State 1 of 3 (calmest),170,3,1,0.1053,0.0686
+semi-Markov,State 1 of 3 (calmest),190,2,1,0.0526,0.0504
+semi-Markov,State 1 of 3 (calmest),252,1,1,0.0000,0.0194
+semi-Markov,State 2 of 3,7,44,2,0.9545,0.9309
+semi-Markov,State 2 of 3,9,42,1,0.9318,0.9020
+semi-Markov,State 2 of 3,10,41,1,0.9091,0.8869
+semi-Markov,State 2 of 3,11,40,1,0.8864,0.8714
+semi-Markov,State 2 of 3,14,39,1,0.8636,0.8235
+semi-Markov,State 2 of 3,16,38,1,0.8409,0.7908
+semi-Markov,State 2 of 3,19,37,1,0.8182,0.7419
+semi-Markov,State 2 of 3,20,36,4,0.7273,0.7256
+semi-Markov,State 2 of 3,21,32,2,0.6818,0.7095
+semi-Markov,State 2 of 3,22,30,2,0.6364,0.6935
+semi-Markov,State 2 of 3,24,28,1,0.6136,0.6619
+semi-Markov,State 2 of 3,25,27,1,0.5909,0.6464
+semi-Markov,State 2 of 3,26,26,1,0.5682,0.6311
+semi-Markov,State 2 of 3,28,25,2,0.5227,0.6010
+semi-Markov,State 2 of 3,31,23,2,0.4773,0.5575
+semi-Markov,State 2 of 3,33,21,1,0.4545,0.5298
+semi-Markov,State 2 of 3,38,20,1,0.4318,0.4646
+semi-Markov,State 2 of 3,39,19,1,0.4091,0.4523
+semi-Markov,State 2 of 3,41,18,1,0.3864,0.4286
+semi-Markov,State 2 of 3,50,16,1,0.3622,0.3338
+semi-Markov,State 2 of 3,60,15,1,0.3381,0.2501
+semi-Markov,State 2 of 3,66,14,1,0.3139,0.2094
+semi-Markov,State 2 of 3,67,13,1,0.2898,0.2033
+semi-Markov,State 2 of 3,70,12,1,0.2656,0.1858
+semi-Markov,State 2 of 3,79,11,1,0.2415,0.1413
+semi-Markov,State 2 of 3,80,10,2,0.1932,0.1370
+semi-Markov,State 2 of 3,82,8,2,0.1449,0.1288
+semi-Markov,State 2 of 3,87,6,2,0.0966,0.1103
+semi-Markov,State 2 of 3,94,4,1,0.0724,0.0886
+semi-Markov,State 2 of 3,96,3,1,0.0483,0.0832
+semi-Markov,State 2 of 3,127,2,1,0.0241,0.0308
+semi-Markov,State 2 of 3,171,1,1,0.0000,0.0072
+semi-Markov,State 3 of 3 (most volatile),6,25,1,0.9600,0.9064
+semi-Markov,State 3 of 3 (most volatile),7,24,1,0.9200,0.8864
+semi-Markov,State 3 of 3 (most volatile),11,23,1,0.8800,0.8031
+semi-Markov,State 3 of 3 (most volatile),13,22,1,0.8400,0.7612
+semi-Markov,State 3 of 3 (most volatile),15,21,1,0.8000,0.7198
+semi-Markov,State 3 of 3 (most volatile),18,20,1,0.7600,0.6597
+semi-Markov,State 3 of 3 (most volatile),19,19,1,0.7200,0.6402
+semi-Markov,State 3 of 3 (most volatile),21,18,1,0.6800,0.6025
+semi-Markov,State 3 of 3 (most volatile),22,17,1,0.6400,0.5841
+semi-Markov,State 3 of 3 (most volatile),23,16,1,0.6000,0.5662
+semi-Markov,State 3 of 3 (most volatile),24,15,1,0.5600,0.5486
+semi-Markov,State 3 of 3 (most volatile),26,14,1,0.5200,0.5148
+semi-Markov,State 3 of 3 (most volatile),29,13,1,0.4800,0.4670
+semi-Markov,State 3 of 3 (most volatile),30,12,1,0.4400,0.4519
+semi-Markov,State 3 of 3 (most volatile),31,11,1,0.4000,0.4372
+semi-Markov,State 3 of 3 (most volatile),41,9,1,0.3556,0.3110
+semi-Markov,State 3 of 3 (most volatile),42,8,2,0.2667,0.3004
+semi-Markov,State 3 of 3 (most volatile),43,6,1,0.2222,0.2901
+semi-Markov,State 3 of 3 (most volatile),44,5,1,0.1778,0.2801
+semi-Markov,State 3 of 3 (most volatile),47,4,1,0.1333,0.2519
+semi-Markov,State 3 of 3 (most volatile),56,3,1,0.0889,0.1824
+semi-Markov,State 3 of 3 (most volatile),108,2,1,0.0444,0.0256
+semi-Markov,State 3 of 3 (most volatile),174,1,1,0.0000,0.0019

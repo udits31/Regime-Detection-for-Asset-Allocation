@@ -1,0 +1,8 @@
+# IN-SAMPLE, DESCRIPTIVE. Data: NIFTYBEES.NS features, 2010-01-19 to 2026-10-30 (real data; includes the out-of-sample evaluation window). Both models fitted once on the full sample with 3 states; regime lengths from the most likely path. Not a trading result.
+model,state,episodes,censored,days_in_state,km_median_days,longest_days,model_implied_median_days
+plain HMM,State 1 of 3 (calmest),19,0,1193,34.0000,250,42.0000
+plain HMM,State 2 of 3,44,2,2100,34.0000,171,31.0000
+plain HMM,State 3 of 3 (most volatile),24,0,847,28.0000,174,23.0000
+semi-Markov,State 1 of 3 (calmest),19,0,1193,34.0000,252,43.0000
+semi-Markov,State 2 of 3,44,1,2022,31.0000,171,36.0000
+semi-Markov,State 3 of 3 (most volatile),25,1,925,29.0000,174,27.0000
