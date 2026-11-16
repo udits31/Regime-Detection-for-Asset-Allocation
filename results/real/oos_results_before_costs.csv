@@ -1,0 +1,12 @@
+# Out-of-sample performance of each strategy and benchmark.
+# Data source: real data. NIFTYBEES.NS and GOLDBEES.NS (Yahoo Finance, adjusted close, with the logged corrections); cash and risk-free rate: FRED IRSTCI01INM156N (OECD call money/interbank rate under 24 hours, India, monthly).
+# Out-of-sample window: 2015-01-05 to 2026-10-30 (2918 trading days). Models refitted every 63 days on data before each block only.
+# Costs: before costs. Execution: close of day t+1; rebalancing band 5%.
+# Benchmarks: named in each row. Sharpe ratios use the cash return as the risk-free rate.
+strategy,annual_return,annual_volatility,sharpe,max_drawdown,annual_turnover,annual_cost,mean_equity_weight,trades
+Buy and hold NIFTYBEES,0.102742,0.146561,0.334982,-0.363366,0.086361,0.000000,1.000000,1.000000
+Static mix 50/20/30,0.103874,0.078736,0.538914,-0.189216,0.256708,0.000000,0.499473,142.000000
+200-day moving average,0.103406,0.090435,0.475381,-0.147827,6.094270,0.000000,0.649306,118.000000
+Volatility targeting,0.105397,0.085150,0.520650,-0.133620,2.412232,0.000000,0.634352,321.000000
+Plain HMM strategy,0.095293,0.079222,0.437524,-0.125137,2.210915,0.000000,0.587991,209.000000
+Semi-Markov strategy,0.094817,0.079256,0.431893,-0.118674,2.125337,0.000000,0.588653,205.000000

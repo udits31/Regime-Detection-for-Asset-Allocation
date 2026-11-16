@@ -1,0 +1,15 @@
+# Sharpe ratio difference (strategy minus benchmark) with a 95% paired stationary block-bootstrap interval.
+# Data source: real data. NIFTYBEES.NS and GOLDBEES.NS (Yahoo Finance, adjusted close, with the logged corrections); cash and risk-free rate: FRED IRSTCI01INM156N (OECD call money/interbank rate under 24 hours, India, monthly).
+# Out-of-sample window: 2015-01-05 to 2026-10-30 (2918 trading days). Models refitted every 63 days on data before each block only.
+# Costs: after costs of 10 basis points per unit of ETF turnover. Execution: close of day t+1; rebalancing band 5%.
+# Benchmarks: named in each row. Sharpe ratios use the cash return as the risk-free rate.
+strategy,benchmark,sharpe_strategy,sharpe_benchmark,difference,ci_low,ci_high,share_of_resamples_above_zero
+Plain HMM strategy,Buy and hold NIFTYBEES,0.409582,0.334389,0.075193,-0.269318,0.418172,0.647500
+Plain HMM strategy,Static mix 50/20/30,0.409582,0.535654,-0.126072,-0.373292,0.129904,0.159300
+Plain HMM strategy,200-day moving average,0.409582,0.407783,0.001799,-0.248282,0.254948,0.507100
+Plain HMM strategy,Volatility targeting,0.409582,0.492225,-0.082644,-0.208297,0.041827,0.101000
+Semi-Markov strategy,Buy and hold NIFTYBEES,0.405045,0.334389,0.070656,-0.275675,0.413417,0.637100
+Semi-Markov strategy,Static mix 50/20/30,0.405045,0.535654,-0.130608,-0.379463,0.126182,0.149200
+Semi-Markov strategy,200-day moving average,0.405045,0.407783,-0.002737,-0.256401,0.255330,0.495400
+Semi-Markov strategy,Volatility targeting,0.405045,0.492225,-0.087180,-0.207060,0.032537,0.080200
+Semi-Markov strategy,Plain HMM strategy,0.405045,0.409582,-0.004536,-0.027183,0.018808,0.337200

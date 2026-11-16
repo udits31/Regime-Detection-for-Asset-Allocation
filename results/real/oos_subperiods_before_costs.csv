@@ -1,0 +1,24 @@
+# Out-of-sample performance by pre-declared sub-period.
+# Data source: real data. NIFTYBEES.NS and GOLDBEES.NS (Yahoo Finance, adjusted close, with the logged corrections); cash and risk-free rate: FRED IRSTCI01INM156N (OECD call money/interbank rate under 24 hours, India, monthly).
+# Out-of-sample window: 2015-01-05 to 2026-10-30 (2918 trading days). Models refitted every 63 days on data before each block only.
+# Costs: before costs. Execution: close of day t+1; rebalancing band 5%.
+# Benchmarks: named in each row. Sharpe ratios use the cash return as the risk-free rate.
+period,strategy,days,annual_return,sharpe,max_drawdown
+2015-2019,Buy and hold NIFTYBEES,1227,0.090468,0.216741,-0.215997
+2015-2019,Static mix 50/20/30,1227,0.084639,0.257208,-0.083603
+2015-2019,200-day moving average,1227,0.055000,-0.129548,-0.147827
+2015-2019,Volatility targeting,1227,0.089279,0.278146,-0.116885
+2015-2019,Plain HMM strategy,1227,0.075902,0.120481,-0.125137
+2015-2019,Semi-Markov strategy,1227,0.076317,0.125806,-0.118674
+2020,Buy and hold NIFTYBEES,251,0.154899,0.501408,-0.363366
+2020,Static mix 50/20/30,251,0.164108,0.844580,-0.189216
+2020,200-day moving average,251,0.204924,1.329449,-0.131238
+2020,Volatility targeting,251,0.161733,1.099784,-0.133620
+2020,Plain HMM strategy,251,0.135912,1.022300,-0.107599
+2020,Semi-Markov strategy,251,0.135116,1.010146,-0.108096
+2021-2026,Buy and hold NIFTYBEES,1440,0.104377,0.403551,-0.161078
+2021-2026,Static mix 50/20/30,1440,0.110203,0.677775,-0.108492
+2021-2026,200-day moving average,1440,0.128947,0.736606,-0.091583
+2021-2026,Volatility targeting,1440,0.109663,0.591507,-0.110935
+2021-2026,Plain HMM strategy,1440,0.105054,0.581546,-0.099210
+2021-2026,Semi-Markov strategy,1440,0.103854,0.567001,-0.101968

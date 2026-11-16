@@ -44,3 +44,4 @@ data/raw/
 data/processed/panel.csv
 # Daily strategy returns include the ETF's own daily returns.
 results/real/oos_daily_returns_*.csv
+results/real/oos_run_output.txt
